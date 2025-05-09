@@ -1,0 +1,105 @@
+/*-----顶部广告----*/
+.header{
+    width:100%;
+    height:140px;
+    overflow:hidden;/*属性用于控制当元素内容超出其指定尺寸（宽度和高度）时的处理方式。*/
+                    /*内容溢出不显示*/
+    position:relative;
+}
+.header img{
+    height:140px;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+/*
+内容居中问题： 一个大盒子中有一个小盒子该怎么让小盒子垂直水平居中
+1.弹性盒子 display:flex; justify-content:center; align-items:center;
+2.绝对定位 position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+*/
+
+/*----------第二个广告部分 banner下面的内容-----*/
+.ad-section .wrap{ /*容器设计 这里让每一部分都在中间*/
+    width:1226px;
+    margin:0 auto;
+    position:relative; 
+}
+.ad-section{
+    width:100%;
+    height:170px;
+    padding:14px 0;
+    background-color:#fff;
+}
+.ad-img{
+    margin-left:24.6px;
+    left:18%;
+    position:absolute;
+    top:0;
+}
+.ad-img img{
+    margin-left:8px;
+    height:170px;
+}
+
+.ad-aside{
+    width:234px;
+    background-color: #5f5750;
+    height:170px;
+    float:left;
+    padding:3px;
+    box-sizing:border-box;
+    font-size:12px;
+    
+}
+.ad-aside li{
+    margin-top:12px;
+    margin-left:12px;
+    margin-bottom:12px;
+    padding-left:7px;
+    padding-bottom:8px;
+    float:left;
+    width:55px;
+    height:55px;
+    box-sizing:border-box;
+}
+.ad-aside img{
+    padding-left:8px;
+    padding-bottom:2px;
+    width:35px;
+}
+.ad-aside li i{
+    width:35px;
+    font-size :12px;
+    margin-bottom:1px;
+    display:block;
+}
+.ad-aside p{
+    text-decoration: none;
+    color:#fff;
+}
+
+/*===============================
+float 属性：
+​1.​元素脱离文档流​​：
+浮动元素会脱离正常文档流，不再占据原有空间，后续元素会顶替其位置（但文本内容会避开浮动元素形成环绕效果）。
+例如：图片左浮动后，周围文字会围绕图片排列。
+​2.​包裹性（自适应宽度）​​：
+未设置宽度的浮动元素会根据内容自动调整宽度，最大不超过父容器宽度。例如：浮动导航菜单项会根据文字长度自适应。
+​3.​块状化与BFC生成​​：
+无论元素原本是行内还是块级元素，设置 float: left 后，其 display 属性会强制变为块级（block），并生成独立的块级格式化上下文（BFC），避免外边距重叠。
+=======================================*/
+/*
+
+text-decoration:none;去掉下划线
+
+box-sizing:border-box; 盒子模型
+默认情况下（content-box 模式），元素的 width 和 height 仅定义内容区域的尺寸，实际总宽度需加上 padding 和 border。
+设置 border-box 后，width 和 height ​​直接包含内容、内边距和边框​​，总尺寸不再因 padding 或 border 而改变。
+*/
+
+/*
+关于position的内容
+如果设置为absolute绝对定位
+会相对于最近的​​非 static 定位的祖先元素​​（如上面的 .header 容器）进行偏移
+所以上面的 heder的position要设置为relative 为子元素提供参照
+*/

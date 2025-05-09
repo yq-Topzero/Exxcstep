@@ -1,0 +1,91 @@
+/*白色导航样式 start*/
+.white-nav{
+    width:100%;
+    height:100px;
+    background-color:#fff;
+
+}
+.white-nav .wrap{
+    width:1226px;
+    margin:0 auto;
+}
+.logo{
+    width:55px;
+    height:55px;
+    /* background-color: #ff6700; */
+    background-image: url("../images/xiaomi-3.svg");
+    background-repeat: no-repeat;  /* 禁止图片重复平铺 */
+    background-size: cover;        /* 图片覆盖整个容器（可能裁剪部分内容） */
+    background-position: center;   /* 图片居中显示 */
+    float:left;
+    margin-top:22.5px;
+    overflow:hidden;
+    position:absolute;
+}
+
+.nav-bar{
+    margin-left:60px;
+    width:775px;
+    height:100px;
+    line-height:100px;
+    float:left;
+}
+.search{
+    float:right;
+    width:295px;
+    height:100px;
+}
+.nav-bar li{
+    float:left;
+    position:relative;
+}
+.nav-bar li a{
+    color:#424242;
+    font-size:18px;
+    padding:0 10px;
+    text-decoration: none;
+}
+.nav-bar li a:hover{
+    color:#ff6700;
+}
+.search input{
+    width:244px;
+    height:50px;
+    float:left;
+    border:1px solid #e0e0e0;
+    box-sizing:border-box;
+    margin-top:25px;
+    padding:0 10px;
+    border-right:0;
+}
+.search button{
+    width:52px;
+    height:50px;
+    float:right;
+    border:1px solid #e0e0e0;
+    margin-top:-50px;
+}
+/*-------------------滑动门样式 start-*/
+.nav-bar-list{
+    width:1226px;
+    height:264px;
+    background-color:#fff;
+    float:left;
+    position:absolute;
+    border-top: 1px solid #424242;
+    display:none;
+    line-height: 25px;
+    margin-left:-180px;
+    z-index:999;
+}
+.name {
+    margin-left:80px;
+}
+.price{
+    margin-left:80px;
+}
+.nav-bar li:hover .nav-bar-list{
+    display:block;
+}
+/*白色导航样式 end*/
+

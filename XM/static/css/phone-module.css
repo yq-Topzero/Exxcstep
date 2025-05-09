@@ -1,0 +1,110 @@
+.phone-module .wrap{
+    width:1226px;
+    margin:0 auto;
+    position:relative;
+}
+
+.phone-module{
+    width:100%;
+    height:642px;
+    background-color:#f1f2f3;
+    overflow:hidden;
+}
+/*左边图片展示区*/
+.left-phone{
+    width:230px;
+    height:628px;
+}
+.left-phone img{
+    width:230px;
+    height:580px;
+}
+
+/*右边商品展示区*/
+.right-phone{
+    margin-left:16px;
+    width:988px;
+    height:628px;
+    background-color:#f1f2f3;
+}
+
+/*文字标题*/
+.title{
+    text-align:left;
+    font-size:22px;
+    font-weight: 200;
+    line-height:58px;
+}
+
+.phone-box{
+    display:flex;
+    width:100%;
+    height:617px;
+    float:left;
+}
+
+.item{
+    background-color: #fff;
+    float:left;
+    width:230px;
+    height:285px;
+    border:1px solid #e0e0e0;
+    margin:0 0 14px 14px;
+    padding:20px 0;
+    box-sizing:border-box;
+    transition: all 0.2s linear;/*动画持续时间 匀速*/
+}
+.item img{
+    margin-left:25px;
+    height:160px;
+    margin-bottom:10px;
+
+}
+
+.item a{
+    text-decoration: none;
+}
+.item:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.item-name{
+    text-align: center;
+    font-size:16px;
+    color:#333;
+    width:214px;
+    height:21px;
+    line-height:21px;
+    margin:0 auto 2px;
+}
+
+.item-desc{
+    text-align: center;
+    width:214px;
+    height:18px;
+    color:#b0b0b0;
+    font-size:12px;
+    line-height:18px;
+    margin:0 auto 10px;
+
+}
+
+.item-price{
+    text-align: center;
+    width:214px;
+    height:18px;
+    color:#ff6700;
+    font-size:14px;
+    line-height:18px;
+    margin:0 auto 10px;
+}
+
+/*家电样式部分*/
+.elc-item img{
+    width:100%;
+    height:285px;
+    margin-left:0;
+    margin-top:-20px;
+
+}
