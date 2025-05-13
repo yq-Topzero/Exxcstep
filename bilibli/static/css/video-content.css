@@ -1,0 +1,164 @@
+.video-content{ /*容器设计 这里让每一部分都在中间*/
+    margin-top:20px;
+    position:relative;
+    width:100%;
+}
+.video-content .wrap{
+    display:flex;
+    width:1440px;
+    margin:0 auto;
+    position:relative; 
+    height: 1500px;
+}
+
+/*============*/
+.video-introduce{
+    display:flex;
+    width:100%;
+    background-color:rgb(25, 26, 27);
+    height:460px;
+}
+
+.intro-left{
+    position:relative;
+    width:535px;
+    height:460px;
+}
+.intro-left img{
+    width:100%;
+    height:460px;
+}
+.slider-img{
+    display:none;
+}
+.active{
+    display:block;
+}
+/*推荐视频简介样式*/
+.slider-title{
+    z-index:20;
+    color:#fff;
+    font-weight:400px;
+    font-size:20px;
+    width:400px;
+    height:25px;
+    text-decoration: none;
+    position:absolute;
+    bottom:35px;
+    left:15px;
+}
+/**/
+.slider-dots{
+    left:15px;
+    display:flex;
+    align-items: center;
+    width:400px;
+    height:20px;
+    z-index:20;
+    position:absolute;
+    bottom:5px;
+}
+.slider-dots li{
+    border-radius:50%;
+    margin-right:8px;
+    float:left;
+    color:rgb(24, 25, 28);
+    background-color: rgba(180, 176, 176);
+    width:12px;
+    height:12px;
+    cursor: pointer;
+}
+.slider-dots-active{
+    background-color: #fff !important;
+}
+/*控制轮播图按钮*/
+.buttons {
+    z-index:20;
+    position:absolute;
+    color: white;
+    cursor: pointer;
+    bottom:15px;
+    right:5px;
+    width:100px;
+    height:50px;
+}
+.prev{
+    border-radius:8px;
+    color:white;
+    border:none;
+    background-color: rgba(25, 26, 27, 0.1);
+    width:30px;
+    height:30px;
+    margin-right:25px;
+    cursor: pointer;
+}
+.next{
+    border-radius:8px;
+    color:white;
+    border:none;
+    background-color: rgba(25, 26, 27, 0.1);
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+/*====================*/
+.intro-right{
+    position:relative;
+    width:905px;
+    height:490px;
+    margin-left:18px;
+    float:left;
+
+}
+.intro-card{
+    float:left;
+    width:280px;
+    height:228px;
+    margin-right:15px;
+    border-radius:5px;
+}
+.intro-card img{
+    width:265px;
+    height:165px;
+    border-radius:5px;
+}
+.detail{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height:50px;
+    width:270px;
+    font-size: 15px;
+    color:#fff;
+
+}
+/*视频介绍文本*/
+.detail-title{
+    color:#fff;
+    height:18px;
+}
+.detail-author{
+    color:rgb(220, 214, 207);;
+    bottom:5px;
+    width:300px;
+    height:15px;
+}
+.detail-author img{
+    margin-right:5px;
+    width:15px;
+    height:15px;
+}
+.detail a{
+    text-decoration:none;
+}
+
+.intro-left::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;  /* 虚化区域高度*/
+    background: rgba(87, 87, 87, 0.5); 
+    z-index: 1;  /* 覆盖在图片上方 */
+}

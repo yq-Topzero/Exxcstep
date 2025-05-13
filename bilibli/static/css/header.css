@@ -1,0 +1,144 @@
+.hbc img{
+    z-index:1;
+    opacity: 0.8;
+    position:relative;
+    width:100%;
+}
+/*=========*/
+.header{
+    z-index:20;
+    top:0;
+    margin-top:10px;
+    padding-left:24px;
+    padding-right:24px;
+    width:1540px;
+    height:120px;
+    float:left;
+    position:absolute;
+    align-items:center;
+    justify-content: center;
+    line-height:22.4px;
+    display:flex;
+    box-sizing: border-box;
+    font-size:14px;
+    font-family: "PingFang SC", HarmonyOS_Regular, "Helvetica Neue", "Microsof";
+    font-weight:600;
+}
+.header img{
+    width:18px;
+    height:18px;
+}
+.headr li{
+    color:rgb(255, 255, 255);
+    cursor: pointer;      /* 鼠标悬停变手型 */
+}
+/*=====左半区域====*/
+.left-nav{
+    height:64px;
+    width:570px;
+    float:left;
+}
+.left-nav a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+.left-nav li{
+    float:left;
+    margin-right:15px;
+}
+.BDF{
+    width:45px;
+    margin-left:20px;
+}
+
+/*=====右半区域====*/
+.right-nav{
+    margin-left:50px;
+    height:64px;
+    width:490px;
+    float:left;
+}
+.right-nav ul li{
+    float:left;
+}
+.right-nav li{
+    box-sizing: border-box;
+    margin-right:15px;
+}
+.right-nav a{
+    display:flex;
+    float:left;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    flex-direction: column; /* 垂直排列 */
+    align-items: center;    /* 水平居中 */
+}
+.user-icon img{
+    border:2px solid black ;
+    border-radius: 50px;
+    width:37px;
+    height:37px;
+}
+
+.post-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    background-color:rgb(251, 114, 153);
+    border-radius:4px;
+    width:99px;
+    height: 33px;
+    cursor: pointer; 
+}
+.post-button img{
+    width:20px;
+    height:15px;
+    margin-top:1px;
+}
+/*=======搜索框样式======*/
+.search-box{
+    margin-left:5px;
+    position:relative;
+    display:flex;
+    box-sizing:border-box;
+    width:378px;
+    height:64px;
+    color:rgb(24, 25, 28);
+}
+.search-box input{
+    border: none; /* 去掉边框 */
+    outline: none; /* 去掉聚焦时的轮廓线 */
+    border-radius:4px;
+    width:378px;
+    height:38px;
+    padding-left:10px;
+}
+.search-content{
+    background-color: rgb(227, 229, 231);
+    box-sizing:border-box;
+    gap:8px;
+    height:38px;
+    width:356px;
+}
+.search-button{
+    margin-top:5px;
+    border-radius:4px;
+    position:absolute;
+    width:32px;
+    height:35px;
+    color:white;
+    left:360px;
+}
+.search-button img{
+    padding-top:5px;
+    padding-left:5px;
+    width:20px;
+    height:20px;
+}
+
+.search-button:hover{
+    background-color:rgb(220, 214, 207);
+}
+
+/*=======logo样式======*/

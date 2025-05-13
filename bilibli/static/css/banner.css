@@ -1,0 +1,137 @@
+.banner{ /*容器设计 这里让每一部分都在中间*/
+    margin-top:20px;
+    position:relative;
+    width:100%;
+}
+.banner a{
+    text-decoration: none;
+    color:rgb(24, 25, 28);
+}
+.banner .wrap{
+    display:flex;
+    width:1440px;
+    margin:0 auto;
+    position:relative; 
+    height: 110px;
+    background-color:rgb(25, 26, 27);
+}
+/*======左侧开始======*/
+.banner-left{
+    display: flex;
+    text-decoration: none;
+    font-size:15px;
+    /* float:left; */
+    width:150px;
+    height:72px;     
+}
+.banner-left img{
+    float:left;
+    width:25px;
+    height:25px;     
+}
+.dongtai-icon{
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    float:left;
+    background-color:rgb(255, 146, 18);
+    width:45px;
+    height:45px;
+}
+.dongtai-icon img{
+    margin-top:10px;
+    margin-left:10px;
+}
+
+.remen-icon{
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    float:left;
+    background-color:rgb(240, 119, 117);
+    width:45px;
+    height:45px;
+}
+.remen-icon img{
+    margin-top:10px;
+    margin-left:10px;
+}
+.banner-left a{
+    margin-right:30px;
+    color:rgb(220, 214, 207);
+}
+
+.banner-left span{
+    display:block;
+    width:30px;
+    height:20px;
+    float:left;
+    margin-top:20px;
+    margin-left:5px;
+}
+/*======左侧结束======*/
+
+/*======右侧开始======*/
+
+/*第一部分*/
+.banner-right{
+    width:1440px;
+    height:65px;
+    /* float:left; */
+
+}
+.banner-item-left{
+    color:rgb(220, 214, 207);
+    line-height:22.4px;
+    float:left;
+    width:950px;
+    height:65px;
+    border-right:1px solid #e5e5e5;
+}
+.banner-item-left a{
+    text-align:center;
+    margin-right:8px;
+    margin-bottom:20px;
+    color:rgb(220, 214, 207);
+    background-color: rgb(30, 31, 32);
+    line-height:22.4px;
+    float:left;
+    width:77px;
+    height:27px;
+    font-size:14px;
+    border:1px solid rgb(53, 57, 58);
+    border-radius:5px;
+}
+.banner-item-left a:last-child{
+    margin-right:0px;
+}
+/*第二部分*/
+.banner-item-right{
+    margin-left:20px;
+    float:left;
+    width:295px;
+    height:65px;
+    line-height:22.4px;
+}
+.banner-item-right a{
+    color:rgb(220, 214, 207);
+    background-color: rgb(30, 31, 32);
+    font-size:13px;
+    width:80px;
+    height:27px;
+    text-align:center;
+    margin-right:15px;
+    margin-bottom:20px;
+    float:left;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+    border:1px solid rgb(53, 57, 58);
+    border-radius:5px;
+}
+.banner-item-right img{
+    width:15px;
+    height:15px;
+}
+/*======右侧结束======*/
