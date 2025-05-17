@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #C70039;
+    /* 主色朱红 */
+    --secondary-color: #2D2D2D;
+    /* 辅助色玄黑 */
+    --accent-color: #FFD700;
+    /* 点缀色鎏金 */
+    --gradient-bg: linear-gradient(135deg, #C70039 0%, #2D2D2D 100%);
+    /* 传统背景 */
+}
+
+/* 定义外层容器样式 */
+.shell {
+    left:200px;
+    top:150px;
+    position: relative;
+    /* 相对定位 */
+    width: 60vw;
+    /* 宽度占视口宽度的60% */
+    height: 40vw;
+    /* 高度占视口高度的40% */
+    max-width: 380px;
+    /* 最大宽度为380像素 */
+    max-height: 250px;
+    /* 最大高度为250像素 */
+    margin: 0;
+    /* 外边距为0 */
+    color: white;
+    /* 字体颜色为白色 */
+    perspective: 1000px;
+    /* 透视效果，观察者与z=0平面的距离 */
+    transform-origin: center;
+    /* 变形原点为中心 */
+}
+
+/* 定义内容容器样式 */
+.content {
+    display: flex;
+    /* 设置为弹性盒子布局 */
+    justify-content: center;
+    /* 主轴居中对齐 */
+    align-items: center;
+    /* 交叉轴居中对齐 */
+    position: absolute;
+    /* 绝对定位 */
+    width: 100%;
+    /* 宽度100% */
+    height: 100%;
+    /* 高度100% */
+    transform-origin: center;
+    /* 变形原点为中心 */
+    transform-style: preserve-3d;
+    /* 保持3D变换 */
+    transform: translateZ(-30vw) rotateY(0);
+    /* 变换：沿z轴平移-30vw，绕y轴旋转0度 */
+    animation: carousel 12s infinite cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+    /* 动画：名称为carousel，持续时间9秒，无限循环，缓动函数为cubic-bezier(0.77, 0, 0.175, 1)，动画结束后保持最后状态 */
+}
+
+/* 定义项目样式 */
+.item {
+    position: absolute;
+    /* 绝对定位 */
+    width: 90vw;
+    /* 宽度占视口宽度的60% */
+    height: 40vw;
+    /* 高度占视口高度的40% */
+    max-width: 400px;
+    /* 最大宽度为380像素 */
+    max-height: 250px;
+    /* 最大高度为250像素 */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    /* 设置阴影 */
+    border-radius: 8px;
+    /* 边框圆角半径为6像素 */
+    background-size: cover;
+    /* 背景图片等比例缩放并覆盖整个容器 */
+    -webkit-box-reflect: below 25px -webkit-linear-gradient(transparent 50%, rgba(255, 255, 255, 0.3));
+    /* 创建倒影效果 */
+}
+
+/* 第一个项目样式 */
+.item:nth-child(1) {
+    max-width: 450px;
+    max-height: 250px;
+    background-image: url(../image/4.jpg);
+    transform: rotateY(0) translateZ(35vw);
+}
+
+/* 第二个项目样式 */
+.item:nth-child(2) {
+    background-image: url(../image/2.webp);
+    transform: rotateY(90deg) translateZ(35vw);
+}
+
+/* 第三个项目样式 */
+.item:nth-child(3) {
+    background-image: url(../image/2.jpg);
+    transform: rotateY(180deg) translateZ(35vw);
+}
+
+/* 第四个项目样式 */
+.item:nth-child(4) {
+    background-image: url(../image/5.jpg);
+    transform: rotateY(270deg) translateZ(35vw);
+}
+
+/* 定义动画 */
+@keyframes carousel {
+    0%, 22% { transform: translateZ(-35vw) rotateY(0); }
+    27%, 47% { transform: translateZ(-35vw) rotateY(-90deg); }
+    52%, 72% { transform: translateZ(-35vw) rotateY(-180deg); }
+    77%, 97% { transform: translateZ(-35vw) rotateY(-270deg); }
+    100% { transform: translateZ(-35vw) rotateY(-360deg); } 
+}

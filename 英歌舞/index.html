@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英歌舞人物</title>
+  <link rel="stylesheet" href="./static/css/style2.css">
+  <link rel="stylesheet" href="./static/css/style1.css">
+</head>
+
+<body>
+  <div class="page-section active1" id="section1">
+    <div id="main">
+      <div id="click-section">
+        <div id="drawerboxes">
+          <div class="drawerbox active">
+            <button class="drawer-btn active" onclick="slideTo(1)"><span class="drawer-head"
+                style="right:-20px">1</span></button>
+          </div>
+          <div class="drawerbox">
+            <button class="drawer-btn" onclick="slideTo(2)"><span class="drawer-head">2</span></button>
+          </div>
+          <div class="drawerbox">
+            <button class="drawer-btn" onclick="slideTo(3)"><span class="drawer-head">3</span></button>
+          </div>
+          <div class="drawerbox">
+            <button class="drawer-btn" onclick="slideTo(4)"><span class="drawer-head">4</span></button>
+          </div>
+        </div>
+      </div>
+      <div id="slide-section">
+        <div id="slide-bar">
+          <div id="bar"></div>
+        </div>
+        <div id="card-section">
+          <div id="card1" class="card">
+            <div class="card-title">
+              英歌舞的历史文化背景
+            </div>
+            <div class="card-content">
+              英歌舞是中国岭南地区的传统民间舞蹈，其历史文化可追溯至明代中期，糅合了傩祭仪式、武术与戏曲元素。其起源众说纷纭：一说源于古代傩舞，用于驱邪避疫，舞者脸谱与傩面具一脉相承；一说受山东秧歌影响，经福建传入潮汕后演化而成；亦有观点认为其脱胎于《水浒传》故事，以梁山好汉装扮展现英雄气概，象征团结抗争的精神。清代起，英歌舞与潮汕民间信仰结合，成为游神赛会的重要仪式，兼具祈福与娱乐功能。2006年，它被列入国家级非物质文化遗产，近年更以“中华战舞”之名走出国门，成为中华文化传播的亮眼符号。
+            </div>
+            <div class="card-img" id="card1-img">
+              <img src="./static/image/p1.jpg" alt="" style="
+            position:absolute;
+            ">
+            </div>
+          </div>
+          <div id="card4" class="card">
+            <div class="card-title">
+              英歌舞风采
+            </div>
+            <div class="shell">
+              <div class="content">
+                <div class="item">
+                </div>
+                <div class="item">
+                </div>
+                <div class="item">
+                </div>
+                <div class="item">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="card2" class="card">
+            <div class="card-title" style="padding-bottom: 20px;">中华战舞，燃动世界</div>
+            <div class="card-content" style="margin-bottom: 20px;">
+              近年来，英歌舞以“中华战舞”之名频频亮相国际舞台，成为传统文化创新性传播的典范。从法国巴黎圣母院广场的元宵巡游到迪拜世博会中国馆的展演，其铿锵有力的步伐与阳刚雄健的气韵引发海外观众惊叹；2022年更登上北京冬奥会开幕式热场环节，通过现代光影技术放大百人方阵的震撼力，向世界展现中国非遗的当代活力。海外社交平台上，英歌舞面具彩绘、槌棒击打等特色元素衍生出百万播放量的二创视频，青年舞者将街舞节奏融入传统套路，形成跨文化对话的新范式。
+              如今，全球30余个国家的高校社团自发组建英歌舞队，这种承载着勇武精神与集体美学的东方战舞，正以青春姿态架起文明互鉴的桥梁。 </div>
+            <div class="card-img3">
+              <img src="./static/image/b2.jpg" alt="">
+              <img src="./static/image/b3.jpg" alt="">
+              <img src="./static/image/b4.jpg" alt="">
+            </div>
+          </div>
+          <div id="card3" class="card">
+            <div class="card-title">
+              感英歌之燃，传英歌之魂
+            </div>
+            <div class="card-content">英歌舞以刚劲舞步与铿锵锣鼓传递出岭南先民的精神基因，其傩舞内核承载驱邪扶正的集体使命感，水浒英雄符号凝聚忠义担当的家国情怀，武术动作彰显勇武不屈的生命力量，
+              而百人齐舞的磅礴阵势更凸显团结协作的社群意识。
+            </div>
+            <div class="card-small-title">
+              “文化是一个国家、一个民族的灵魂。中华文明绵延五千年，以独特的基因屹立东方，丰富着全人类的文明图谱。或藏于馆阁，或见诸典籍，璨若星河的中华文明期待你我去感知感受、传承创新、发扬光大。”</div>
+            <div class="card-img1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // 定义变量 
+    let chosenSlideNumber = 1; // 当前选择的幻灯片编号 
+    let offset = 0; // 幻灯片偏移量 
+    let barOffset = 0; // 导航条偏移量 
+    let intervalID; // 定时器 ID 
+    // 启动幻灯片轮播 
+    startSlide();
+    // 获取所有抽屉按钮，并为每个按钮添加点击事件监听器 
+    const drawerBtns = Array.from(document.querySelectorAll(".drawer-btn"));
+    drawerBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        clearInterval(intervalID); // 清除定时器 
+        startSlide(); // 重新启动幻灯片轮播 
+      })
+    })
+    // 获取幻灯片区域 
+    const slideSection = document.querySelector("#slide-section");
+    // 鼠标移入幻灯片区域时清除定时器 
+    slideSection.addEventListener("mouseenter", () => {
+      clearInterval(intervalID);
+    })
+    // 鼠标移出幻灯片区域时重新启动幻灯片轮播 
+    slideSection.addEventListener("mouseleave", () => {
+      startSlide();
+    })
+    // 切换到指定编号的幻灯片 
+    function slideTo(slideNumber) {
+      drawerboxToggle(slideNumber); // 切换抽屉面板状态 
+      drawerbtnToggle(slideNumber); // 切换抽屉按钮状态 
+      // 更新偏移量 
+      let previousSlideNumber = chosenSlideNumber;
+      chosenSlideNumber = slideNumber;
+      offset += (chosenSlideNumber - previousSlideNumber) * (-100); // 计算幻灯片偏移量 
+      barOffset += (chosenSlideNumber - previousSlideNumber) * (100); // 计算导航条偏移量 
+      barSlide(barOffset); // 移动导航条 
+      // 获取所有幻灯片，为每个幻灯片设置偏移量 
+      const slides = document.querySelectorAll(".card");
+      Array.from(slides).forEach(slide => {
+        slide.style.transform = `translateY(${offset}%)`;
+      })
+    }
+    // 切换抽屉面板状态 
+    function drawerboxToggle(drawerboxNumber) {
+      let prevDrawerboxNumber = chosenSlideNumber;
+      const drawerboxes = document.querySelectorAll(".drawerbox");
+      drawerboxes[prevDrawerboxNumber - 1].classList.toggle("active"); // 切换前一个抽屉面板的状态 
+      drawerboxes[drawerboxNumber - 1].classList.toggle("active"); // 切换当前抽屉面板的状态 
+    }
+    // 切换抽屉按钮状态 
+    function drawerbtnToggle(drawerBtnNumber) {
+      let prevDrawerBtnNumber = chosenSlideNumber;
+      const drawerBtns = document.querySelectorAll(".drawer-btn");
+      drawerBtns[prevDrawerBtnNumber - 1].classList.toggle("active"); // 切换前一个抽屉按钮的状态 
+      drawerBtns[drawerBtnNumber - 1].classList.toggle("active"); // 切换当前抽屉按钮的状态 
+    }
+    // 移动导航条 
+    function barSlide(barOffset) {
+      const bar = document.querySelector("#bar");
+      bar.style.transform = `translateY(${barOffset}%)`;
+    }
+    // 启动幻灯片轮播 
+    // function startSlide() {
+    //   intervalID = setInterval(() => {
+    //     slideTo(chosenSlideNumber % 4 + 1); // 每次切换到下一个幻灯片
+    //   }, 3000); // 每隔 3 秒自动切换幻灯片
+    // }
+
+
+    // 新增滑动控制逻辑
+    let currentSection = 0;
+    const sections = document.querySelectorAll('.page-section');
+    const threshold = 80; // 滑动触发阈值
+
+    // 统一事件监听（兼容移动端/桌面端）
+    document.addEventListener('wheel', handleScroll);
+    document.addEventListener('touchstart', e => touchStartY = e.touches[0].clientY);
+    document.addEventListener('touchend', e => {
+      const delta = touchStartY - e.changedTouches[0].clientY;
+      handleScroll({ deltaY: delta });
+    });
+
+    function handleScroll(e) {
+      const direction = Math.sign(e.deltaY);
+
+      if (direction > 0 && currentSection < sections.length - 1) {
+        navigateTo(currentSection + 1);
+      } else if (direction < 0 && currentSection > 0) {
+        navigateTo(currentSection - 1);
+      }
+    }
+
+    function navigateTo(index) {
+      //   // 同步导航按钮状态
+      //   document.querySelectorAll('.drawer-btn').forEach(btn =>
+      //     btn.classList.toggle('active', btn.onclick.includes(`${index + 1}`))
+      //   );
+
+      // 执行滑动动画
+      sections[currentSection].style.transform = `translateY(${-index * 100}%)`;
+      currentSection = index;
+
+      // 暂停轮播动画
+      // if (index === 1) document.querySelector('.content').style.animationPlayState = 'running';
+      // else document.querySelector('.content').style.animationPlayState = 'paused';
+    }
+
+
+  </script>
+</body>
+
+</html>
