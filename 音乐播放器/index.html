@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="./static/css/style1.css">
+</head>
+
+<body>
+    <div class="player-warp">
+        <div class="player-info">
+            <div class="info">
+                <div class="song-name">Demons</div>
+                <div class="singer-name">Imagine Dragons</div>
+                <!--进度条-->
+                <div class="progress">
+                    <div class="progress-bar-top">
+                        <span class="current-time">00:00</span>
+                        <span class="total-time">02:57</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-bar-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="player-control">
+            <div class="cover">
+                <img src="./static/img/h4.avif" alt="封面">
+
+            </div>
+            <div class="control">
+                <div class="icon">
+                    <img src="./static/img/2.png" alt="上一首">
+                </div>
+                <div class="icon">
+                    <img src="./static/img/5.png" alt="播放">
+                </div>
+                <div class="icon">
+                    <img src="./static/img/3.png" alt="下一首">
+                </div>
+                <div class="icon">
+                    <img class="player-list" src="./static/img/4.png" alt="列表">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mask_bg"></div>
+    <div class="list-warp">
+        <div class="list">
+            <div class="list-content">
+
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script>
+        fetch('data/song.json')
+            .then(response => response.json())
+            .then(data => {
+                // 将数据传递给 index.js 中的处理函数
+                if (window.initMusicPlayer) {
+                    window.initMusicPlayer(data);
+                }
+            })
+            .catch(error => console.error('加载音乐数据失败:', error));
+    </script>
+</body>
+
+</html>

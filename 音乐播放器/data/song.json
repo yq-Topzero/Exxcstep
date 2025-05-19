@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Demons",
+        "audio_url": "http://m801.music.126.net/20250519235737/56f665e85f1a3bc2d986993524c19a5b/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/27568309787/8dd0/eee7/859e/0ec851316443ed37da32e9149635e65d.mp3?vuutv=+I3EIAstH0R70dFvLx7JaNORDby3ub8yLd5o8FzoCVRtxJNuGeuJM7K+BEnYISwEBrbjI6usyBJQYizO4QA3wbr6JYkr9Sw17hzCXWis4OU=",
+        "singer": "Imagine Dragons",
+        "cover": "static/img/ab1.jpg",
+        "time": "02:57"
+    },
+    {
+        "name": "四点的海棠花未眠",
+        "audio_url": "http://m701.music.126.net/20250519211950/9157069a9025693af5316f064ca83ff5/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/60017563090/b638/dbe2/4fdb/6fbe16196c80cc6810dc0720ad6acb7a.mp3?vuutv=6LOJdZgjZLZAc0K0m0Jqi55DGqY4D+VMmWZ+d1MkZC7ZfCSurk0VbKcUEQI8RiQTR2S7rf9Kbvu/Kdxzt/K+OXdwG2qcE73ctzW4nQLum30=",
+        "singer": "渡",
+        "cover": "static/img/ab2.jpg",
+        "time": "03:20"
+    },
+    {
+        "name": "一点(Live版)",
+        "audio_url": "http://m801.music.126.net/20250519232113/f9efd1f2342f436657b12663b99ead8a/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/59995728703/3c7f/6ce0/51ce/bcdff70c2b75f63defe64c59e02c868a.mp3?vuutv=saZTHYK3tnsDYOyw6/wRCh/4qGCgP0826bEFHn/TCb372MHOeuq0CVgXwc0xsxI4WpAuNnSIkHwXwrdzVw0gNYpk15cmMENce+r53uluWk0=",
+        "singer": "黄子弘凡/姚晓棠",
+        "cover": "static/img/ab3.jpg",
+        "time": "03:40"
+    },
+    {
+        "name": "Whatever It Takes",
+        "audio_url": "http://m801.music.126.net/20250519231104/f276a53443810cc3244e6174eddee9b1/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/19623087226/1218/1024/d6cd/4affae829e95aa1a5e81d4b6359aaf43.mp3?vuutv=5mUPGiBXpgk9BMz+94aIrAzQTJjz1IIe/gwnppMRnPerTeLNI2onZ7pgdtg9aKMPwyv4cNvv/Lf3/g9sEuF6eis6aehlJqvpUjbDpIzrqns=",
+        "singer": "Imagine Dragons",
+        "cover": "static/img/ab4.jpg",
+        "time": "03:22"
+    },
+    {
+        "name": "爱慢慢慢慢来",
+        "audio_url": "http://m801.music.126.net/20250519220052/83b11929a9f386c02df91d7a5f3c5d89/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/44661512405/9c7a/b870/7dab/58dfeb97b25eb6350116195ef66eb72a.mp3?vuutv=AhqKSf3vaefRKqlTW2NZXFD+X7wxIsA2QbWL4IwxbyBi6VXANuPcw2KNyNBCRhABHQAJmtXBwtcB24J0jlH8cRDTYbGNGhrONNjnNal0ZH0=",
+        "singer": "罗森涛",
+        "cover": "static/img/ab5.jpg",
+        "time": "02:41"
+    },
+    {
+        "name": "A Place Called You",
+        "audio_url": "http://m701.music.126.net/20250519235653/e956b127de1b8ec037f2650085e541fd/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/28482132537/20bd/d86e/476c/eb6762bb150f988598361a90b0c0e6e6.mp3?vuutv=b3tiFd7UV00uEO1MHkraePpx5mKJmdqFxgZXIFlDFVIHME6N1zJ4XBE5Bfx0US5TZR7uW0BFr4tStjNiJbygpm2XOXZ66rfNoMNrRlRbzBM=",
+        "singer": "Emma Stevens",
+        "cover": "static/img/ab6.jpg",
+        "time": "04:19"
+    },
+    {
+        "name": "城北的花(Live)",
+        "audio_url": "http://m701.music.126.net/20250519230011/955b427e78e72e10631e31844d0363db/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/59866027882/1c08/b2e8/7f20/53555b66a27aa6f025548a1514d22981.mp3?vuutv=Vs6gNZGmHXDgQMnDtPwqXWKeHuTDCrEpDRzt8vupBW5+7154wdTFjeYiTvCpejMJ8V7fN9WHELzS7E/qn/oZrCeI6+9yAOOdvSMBuOTsqro=",
+        "singer": "王源,王宇宙",
+        "cover": "static/img/ab3.jpg",
+        "time": "03:34"
+    }
+]
+
+
